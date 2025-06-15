@@ -10,29 +10,38 @@ $(document).ready(function () {
     animateIn: 'slideInUp'
   });
 
-  // Hero click update
-  $('.news-card').on('click', function () {
-    var img = $(this).data('img');
-    var title = $(this).find('.title').text();
-    var date = $(this).find('.meta span').first().text();
-    var author = $(this).find('.meta span').last().text();
-    $('.main-news-hero').css('background-image', 'url(' + img + ')');
-    $('.main-article .headline').text(title);
-    $('.main-article .meta').html(
-      '<span class="author"><i class="fas fa-pen"></i> ' + author + '</span>' +
-      '<span class="date mx-2"><i class="fas fa-calendar-alt"></i> ' + date + '</span>'
+  var hero = $('.main-news-hero');
+  var article = $('.main-article');
+
+  $('.owl-news-cards').owlCarousel({
+    items: 2,
+    margin: parseInt(getComputedStyle(document.documentElement).getPropertyValue('--space-md')),
+    loop: true,
+    rtl: true,
+    nav: true,
+    navText: [
+      '<i class="fas fa-chevron-right"></i>',
+      '<i class="fas fa-chevron-left"></i>'
+    ],
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 }
+    }
+  }).on('click', '.owl-item .item', function () {
+    var $this = $(this);
+    hero.css('background-image', 'url(' + $this.data('img') + ')');
+    article.find('.headline').text($this.data('title'));
+    article.find('.meta').html(
+      '<span class="author"><i class="fas fa-pen"></i> ' + $this.data('author') + '</span>' +
+      '<span class="date mx-2"><i class="fas fa-calendar-alt"></i> ' + $this.data('date') + '</span>'
     );
+    // Optional: update summary if provided
+    if ($this.data('summary')) {
+      article.find('.summary').text($this.data('summary'));
+    }
   });
 
-  // Slider navigation
-  var wrapper = $('.cards-wrapper');
-  var cardWidth = $('.news-card').outerWidth(true);
-  $('.next').click(function () {
-    wrapper.animate({ scrollLeft: '+=' + cardWidth }, 300);
-  });
-  $('.prev').click(function () {
-    wrapper.animate({ scrollLeft: '-=' + cardWidth }, 300);
-  });
+
   const track = document.querySelector(".news-list");
   let x = 0;
   const speed = 0.3; // slower speed for smoother scroll

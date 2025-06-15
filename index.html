@@ -168,48 +168,46 @@
   </section>
 
   <!-- Main News Hero Section -->
-  <section class="main-news-hero">
+  <section class="main-news-hero position-relative">
     <div class="news-overlay container-fluid px-0 d-flex flex-column flex-lg-row">
       <!-- Main Article Info -->
       <div class="main-article col-lg-6 d-flex flex-column justify-content-end text-white p-4">
         <span class="badge bg-light text-dark mb-3">رأي المشهد</span>
-        <h2 class="headline">تداعيات الاحتجاجات على تعطيل نتنياهو لصفقة التبادل</h2>
-        <div class="meta small mb-2">
-          <span class="author"><i class="fas fa-pen"></i> أحمد سلاح</span>
-          <span class="date mx-2"><i class="fas fa-calendar-alt"></i> 13 مايو 2025</span>
-        </div>
-        <p class="summary">تصاعدت الاحتجاجات داخل كيان العدو بعد إعلان الاحتلال العثور على جثث 6 أسرى قتلى في جنوب قطاع
-          غزة</p>
+        <h2 class="headline"></h2>
+        <div class="meta small mb-2"></div>
+        <p class="summary"></p>
       </div>
 
-      <!-- Slider Cards -->
-      <div class="news-slider col-lg-6 d-flex align-items-end justify-content-start position-relative p-4">
-        <div class="cards-wrapper">
-          <div class="news-card" data-img="img/news1.jpg">
-            <img src="img/news1.jpg" alt="خبر 1" />
-            <div class="text">
-              <p class="title">دولة الكيان العالقة في أزماتها الداخلية والخارجية</p>
-              <div class="meta">
-                <span>13 مايو 2025</span>
-                <span>أحمد سلاح</span>
+      <!-- Slider Cards using Owl Carousel -->
+      <div class="news-slider col-lg-6 p-4">
+        <div class="owl-carousel owl-news-cards">
+          <div class="item" data-img="assets/img/articles/Horizontal/1.jpg"
+            data-title="دولة الكيان العالقة في أزماتها الداخلية والخارجية" data-date="13 مايو 2025"
+            data-author="أحمد سلاح"
+            data-summary="تصاعدت الاحتجاجات داخل كيان العدو بعد إعلان الاحتلال العثور على جثث 6 أسرى قتلى في جنوب قطاع غزة">
+            <img src="assets/img/articles/Horizontal/1.jpg" alt="خبر 1" />
+            <div class="card-text p-3 bg-white rounded">
+              <p class="title mb-2">دولة الكيان العالقة في أزماتها الداخلية والخارجية</p>
+              <div class="meta small text-muted d-flex justify-content-between">
+                <span><i class="fas fa-calendar-alt"></i> 13 مايو 2025</span>
+                <span><i class="fas fa-pen"></i> أحمد سلاح</span>
               </div>
             </div>
           </div>
-          <div class="news-card" data-img="img/news2.jpg">
-            <img src="img/news2.jpg" alt="خبر 2" />
-            <div class="text">
-              <p class="title">تقدم مفاوضات وقف إطلاق النار بعد وقف العمليات العسكرية</p>
-              <div class="meta">
-                <span>12 مايو 2025</span>
-                <span>ليلى النجار</span>
+          <div class="item" data-img="assets/img/articles/Horizontal/2.jpg"
+            data-title="تقدم مفاوضات وقف إطلاق النار بعد وقف العمليات العسكرية" data-date="12 مايو 2025"
+            data-author="ليلى النجار"
+            data-summary="مفاوضات وقف إطلاق النار دخلت مرحلة جديدة بعد تبادل الرسائل بين الطرفين">
+            <img src="assets/img/articles/Horizontal/2.jpg" alt="خبر 2" />
+            <div class="card-text p-3 bg-white rounded">
+              <p class="title mb-2">تقدم مفاوضات وقف إطلاق النار بعد وقف العمليات العسكرية</p>
+              <div class="meta small text-muted d-flex justify-content-between">
+                <span><i class="fas fa-calendar-alt"></i> 12 مايو 2025</span>
+                <span><i class="fas fa-pen"></i> ليلى النجار</span>
               </div>
             </div>
           </div>
-          <!-- Additional cards... -->
-        </div>
-        <div class="slider-nav">
-          <button class="prev">&#8592;</button>
-          <button class="next">&#8594;</button>
+          <!-- Add more .item blocks here -->
         </div>
       </div>
     </div>
