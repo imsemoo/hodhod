@@ -206,6 +206,7 @@
   align-items: center;
   color: var(--color-primary);
   font-size: 14px;
+  font-family: "Al-Jazeera-Bold";
 
 }
 
@@ -439,6 +440,8 @@
 
 /* Article title */
 .sidebar-widget .item-title {
+  font-family: "Al-Jazeera-Bold";
+
   font-size: var(--font-xs);
   color: var(--text-primary);
   transition: color 0.3s ease;
