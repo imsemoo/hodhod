@@ -785,6 +785,101 @@
   color: var(--text-secondary);
 }
 
+/* Footer Base */
+.site-footer {
+  background-color: #0F0D35;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+/* Widget Title */
+.footer-title {
+  font-size: clamp(1.125rem, 1.1vw + 0.95rem, 1.3125rem);
+  display: inline-block;
+}
+
+/* Separator under title */
+.footer-separator {
+  border: none;
+  border-bottom: 1px dashed var(--color-border);
+  margin-bottom: var(--space-sm);
+}
+
+/* About Text */
+.footer-about-text {
+  font-size: var(--font-sm);
+  color: #CDE8FE;
+  line-height: 1.6;
+}
+
+/* Categories List */
+.footer-cats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+}
+
+.footer-cat {
+  display: inline-block;
+  padding: var(--space-xxs) var(--space-xs);
+  font-size: var(--font-xs);
+  color: #CDE8FE;
+  border: 1px solid #CDE8FE;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-cat:hover {
+  background-color: #fff;
+  color: var(--color-dark);
+}
+
+/* Social Links */
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-sm);
+  border: 1px solid #CDE8FE;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.icon-circle {
+  background: hsla(206, 95%, 90%, 1);
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.footer-social:hover {
+  background-color: #fff;
+  color: var(--color-dark);
+}
+
+/* Bottom Separator */
+.footer-bottom-separator {
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .featured-news-item-large {
