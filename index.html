@@ -96,10 +96,15 @@
 
 <body>
   <div id="preloadr">
-    <div class="typewriter">
-      <div class="slide"><i></i></div>
-      <div class="paper"></div>
-      <div class="keyboard"></div>
+    <!-- From Uiverse.io by Nawsome -->
+    <div class="loader">
+      <div class="wrapper">
+        <div class="circle"></div>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+        <div class="line-4"></div>
+      </div>
     </div>
   </div>
 
@@ -119,6 +124,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="banner-bar">
+      <img src="./assets/img/banner.png" alt="">
     </div>
 
     <!-- Logo and Navigation -->
@@ -167,52 +176,94 @@
     </div>
   </section>
 
-  <!-- Main News Hero Section -->
-  <section class="main-news-hero position-relative">
-    <div class="news-overlay container-fluid px-0 d-flex flex-column flex-lg-row">
-      <!-- Main Article Info -->
-      <div class="main-article col-lg-6 d-flex flex-column justify-content-end text-white p-4">
-        <span class="badge bg-light text-dark mb-3">رأي المشهد</span>
-        <h2 class="headline"></h2>
-        <div class="meta small mb-2"></div>
-        <p class="summary"></p>
-      </div>
 
-      <!-- Slider Cards using Owl Carousel -->
-      <div class="news-slider col-lg-6 p-4">
-        <div class="owl-carousel owl-news-cards">
-          <div class="item" data-img="assets/img/articles/Horizontal/1.jpg"
-            data-title="دولة الكيان العالقة في أزماتها الداخلية والخارجية" data-date="13 مايو 2025"
-            data-author="أحمد سلاح"
-            data-summary="تصاعدت الاحتجاجات داخل كيان العدو بعد إعلان الاحتلال العثور على جثث 6 أسرى قتلى في جنوب قطاع غزة">
-            <img src="assets/img/articles/Horizontal/1.jpg" alt="خبر 1" />
-            <div class="card-text p-3 bg-white rounded">
-              <p class="title mb-2">دولة الكيان العالقة في أزماتها الداخلية والخارجية</p>
-              <div class="meta small text-muted d-flex justify-content-between">
-                <span><i class="fas fa-calendar-alt"></i> 13 مايو 2025</span>
-                <span><i class="fas fa-pen"></i> أحمد سلاح</span>
+  <section class="main-featured-news section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Left column: four small news cards -->
+        <div class="col-md-6">
+          <div class="row g-3">
+
+            <!-- Small news card 1 -->
+            <div class="col-6">
+              <div class="card small-news-card rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="News thumbnail">
+                <div class="card-body p-3">
+                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
+                  <div class="text-muted small d-flex gap-3">
+                    <span class="author"><img src="assets/img/icons/author.svg" alt=""> أمجد سامح</span>
+                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item" data-img="assets/img/articles/Horizontal/2.jpg"
-            data-title="تقدم مفاوضات وقف إطلاق النار بعد وقف العمليات العسكرية" data-date="12 مايو 2025"
-            data-author="ليلى النجار"
-            data-summary="مفاوضات وقف إطلاق النار دخلت مرحلة جديدة بعد تبادل الرسائل بين الطرفين">
-            <img src="assets/img/articles/Horizontal/2.jpg" alt="خبر 2" />
-            <div class="card-text p-3 bg-white rounded">
-              <p class="title mb-2">تقدم مفاوضات وقف إطلاق النار بعد وقف العمليات العسكرية</p>
-              <div class="meta small text-muted d-flex justify-content-between">
-                <span><i class="fas fa-calendar-alt"></i> 12 مايو 2025</span>
-                <span><i class="fas fa-pen"></i> ليلى النجار</span>
+
+            <!-- Small news card 2 -->
+            <div class="col-6">
+              <div class="card small-news-card rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/3.jpg" class="card-img-top" alt="News thumbnail">
+                <div class="card-body p-3">
+                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
+                  <div class="text-muted small d-flex gap-3">
+                    <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
+                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Small news card 3 -->
+            <div class="col-6">
+              <div class="card small-news-card rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/1.jpg" class="card-img-top" alt="News thumbnail">
+                <div class="card-body p-3">
+                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
+                  <div class="text-muted small d-flex gap-3">
+                    <span class="author"><img src="assets/img/icons/author.svg" alt=""> أمجد سامح</span>
+                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Small news card 4 -->
+            <div class="col-6">
+              <div class="card small-news-card rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="News thumbnail">
+                <div class="card-body p-3">
+                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
+                  <div class="text-muted small d-flex gap-3">
+                    <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
+                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <!-- Add more .item blocks here -->
         </div>
+
+        <!-- Right column: one large featured news card -->
+        <div class="col-md-6">
+          <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+            <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
+            <div class="overlay position-absolute bottom-0 w-100 p-4"
+              style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+              <span class="category">آخر الأخبار</span>
+              <h3 class="fw-bold text-white">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
+                الإيرانية</h3>
+              <div class="d-flex gap-2 align-items-center  text-white ">
+                <span class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد سامح</span>
+                <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-
 
 
 

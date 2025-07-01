@@ -13,7 +13,7 @@
 }
 
 .hodhod-header .topbar {
-  padding: var(--space-sm) 0;
+  padding: var(--space-xs) 0;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -96,6 +96,13 @@
   background: #E7F4FE;
   border-right: 2px solid var(--color-primary);
   color: var(--color-primary-hover);
+
+}
+
+
+.banner-bar img {
+  width: 100%;
+  object-fit: cover;
 
 }
 
@@ -185,71 +192,573 @@
   }
 }
 
-.main-news-hero {
+.card-title {
+  font-size: var(--font-lg);
+  font-weight: bold;
+  margin-bottom: var(--space-xs);
+
+}
+
+.date,
+.author {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 14px;
+
+}
+
+.date img,
+.author img {
+  width: 16px !important;
+}
+
+.category {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--color-primary);
+  border-right: 1px solid var(--Primary-Color, #211D75);
+  background: #CDE8FE;
+  width: max-content;
+  padding: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Al-Jazeerarai-Bold";
+  border-radius: 4px;
+
+}
+
+/* Start Main Featured News */
+.main-featured-news {
+  padding: var(--space-md) 0;
+}
+
+.main-featured-news .featured-news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-md);
+  height: 500px;
+}
+
+.featured-news-item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.featured-news-item {
   position: relative;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-news-item img {
   width: 100%;
-  min-height: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-news-item .featured-news-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.featured-news-item-small {}
+
+.featured-news-item .featured-news-image::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.featured-news-item .featured-news-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-sm);
   color: white;
 }
 
-.main-news-hero .news-overlay {
-  background: rgba(0, 0, 0, 0.4);
+
+
+.featured-news-item .featured-news-content .card-title {
+  font-size: var(--font-xl);
+  margin-top: var(--space-xs);
+
+
 }
 
-.main-article .headline {
-  font-size: var(--font-xxl);
-  line-height: 1.2;
+.featured-news-item-small .featured-news-content .card-title {
+  font-size: var(--font-lg);
+
 }
 
-.main-article .summary {
-  font-size: var(--font-md);
-  margin-top: var(--space-sm);
-}
-
-.owl-news-cards .item {
-  position: relative;
-  cursor: pointer;
-}
-
-.owl-news-cards .item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-}
-
-.owl-news-cards .card-text {
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-}
-
-.owl-news-cards .owl-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.owl-news-cards .owl-nav button {
-  background: none;
+.card {
   border: none;
-  font-size: 2rem;
-  color: var(--color-accent);
+  border-radius: var(--radius-lg);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+
 }
 
-.owl-news-cards .owl-dots {
-  margin-top: var(--space-md);
+.card-image .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card .card-title {
+  margin: var(--space-xs) 0;
+}
+
+.sidebar {
+  border-radius: var(--radius-lg);
+  border: 2px solid hsl(240, 100%, 90%);
+  background: #F7F7FF;
+  padding: 24px 16px;
+}
+
+
+/* Professional widget title styling */
+.sidebar-widget .widget-title {
+  font-family: "Al-Jazeera-Bold", sans-serif;
+  /* bold font */
+  font-size: clamp(1.125rem, 1.1vw + 0.95rem, 1.3125rem);
+  /* large font size for widgets */
+  color: var(--color-primary);
+  /* primary brand color */
+  position: relative;
+  /* enable positioning of pseudo-element */
+  padding-bottom: var(--space-sm);
+  /* spacing below title */
+  margin-bottom: var(--space-md);
+  /* spacing below widget title */
+  display: inline-block;
+  /* shrink to text width */
+  text-transform: uppercase;
+  /* transform text to uppercase */
+}
+
+/* Underline pseudo-element */
+.sidebar-widget .widget-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  /* initial underline width */
+  height: 3px;
+  /* underline thickness */
+  background-color: var(--color-primary);
+  /* accent color for underline */
+  border-radius: var(--radius-sm);
+  /* rounded edges for underline */
+  transition: width 0.3s ease;
+  /* smooth width transition */
+}
+
+/* Expand underline on hover */
+.sidebar-widget .widget-title:hover::after {
+  width: 100%;
+  /* full width on hover */
+}
+
+
+
+/* Infographic slider images */
+.infographic-slider .item img {
+  width: 100%;
+  aspect-ratio: 3/3.2;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+
+/* Dots styling */
+.owl-theme .owl-dots {
   text-align: center;
+  margin-top: var(--space-xs);
 }
 
-.owl-news-cards .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background: var(--color-accent);
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  background: #CDE8FE;
   display: inline-block;
   border-radius: 50%;
   margin: 0 var(--space-xs);
+  transition: background 0.3s ease;
 }
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--color-primary);
+  border-radius: 6px;
+  width: 36px;
+  height: 8px;
+}
+
+/* Most Read Widget Styles */
+.sidebar-widget .most-read-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each most-read item */
+.sidebar-widget .most-read-item {
+  align-items: flex-start;
+}
+
+/* Thumbnail image */
+.sidebar-widget .most-read-item>img {
+  width: 104px;
+  height: 98px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+/* Container for text */
+.sidebar-widget .item-content {
+  flex: 1;
+}
+
+/* Category badge */
+.sidebar-widget .category {
+  padding: 2px 8px;
+}
+
+/* Article title */
+.sidebar-widget .item-title {
+  font-size: var(--font-xs);
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.sidebar-widget .item-title:hover {
+  color: var(--color-primary);
+}
+
+/* Meta info (author & time) */
+.sidebar-widget .item-meta {
+  font-size: var(--font-xs);
+}
+
+.sidebar-widget .item-meta i {
+  font-size: 0.9em;
+}
+
+/* Caricature slider images */
+.caricature-slider .item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-lg);
+
+}
+
+/* Overlay caption */
+.caricature-slider .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: var(--font-xs);
+  text-align: center;
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+
+/* Hide pagination dots */
+.caricature-slider .owl-dots {
+  display: none;
+}
+
+/* Navigation arrows */
+.caricature-slider .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.caricature-slider .owl-nav .owl-prev {
+  left: 8px;
+}
+
+.caricature-slider .owl-nav .owl-next {
+  right: 8px;
+}
+
+.caricature-slider .owl-nav button i {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+/* Newsletter widget container */
+.sidebar-widget .newsletter-widget {
+  background-color: #fff;
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid #e5e5ff;
+}
+
+/* Newsletter logo image */
+.sidebar-widget .newsletter-widget .newsletter-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Description text */
+.sidebar-widget .newsletter-widget .newsletter-text {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Input group styling */
+.sidebar-widget .newsletter-widget .input-group-text {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.sidebar-widget .newsletter-widget .form-control {
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  border-right: none;
+  font-size: var(--font-sm);
+}
+
+/* Subscribe button */
+.sidebar-widget .newsletter-widget .subscribe-btn {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  border: none;
+  padding: var(--space-xs) 0;
+  font-size: var(--font-md);
+  border-radius: var(--radius-md);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-widget .newsletter-widget .subscribe-btn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Important Categories Styles */
+.sidebar-widget .important-categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-widget .category-item {
+  margin-bottom: var(--space-sm);
+  height: 80px;
+}
+
+.sidebar-widget .category-link {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.sidebar-widget .category-link:hover {
+  transform: translateY(-4px);
+}
+
+.sidebar-widget .category-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Link icon in top-left */
+.sidebar-widget .category-icon {
+  position: absolute;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--space-xxs);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Category label in bottom-right */
+.sidebar-widget .category-label {
+  position: absolute;
+  bottom: var(--space-xs);
+  right: var(--space-xs);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: var(--space-xxs) var(--space-sm);
+  font-size: var(--font-xs);
+  border-radius: var(--radius-lg);
+  transition: background 0.3s ease;
+}
+
+/* Hover state */
+.sidebar-widget .category-link:hover .category-icon {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.sidebar-widget .category-link:hover .category-label {
+  background: var(--color-accent);
+}
+
+/* Reset list */
+.sidebar-widget .read-also-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Align icon and text */
+.sidebar-widget .read-also-item {
+  align-items: flex-start;
+}
+
+/* Bullet icon styling */
+.sidebar-widget .bullet-icon {
+  font-size: var(--font-xs);
+  color: var(--color-primary);
+  margin-top: 0.4em;
+}
+
+/* Link styling */
+.sidebar-widget .read-also-link {
+  font-family: "Al-Jazeera-Bold";
+
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover state */
+.sidebar-widget .read-also-link:hover {
+  color: var(--color-primary);
+}
+
+/* Container for the entire pagination */
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) 0;
+  margin-top: 50px;
+}
+
+/* Summary text styling */
+.pagination-info {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+/* Wrapper for arrow buttons and page numbers */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Arrow buttons */
+.pagination-controls .page-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination-controls .page-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* List of page numbers */
+.pagination-list {
+  display: flex;
+  gap: var(--space-sm);
+  margin: 0 var(--space-md);
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual page number buttons */
+.page-number {
+  background: transparent;
+  border: none;
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.page-number:hover:not(.active) {
+  background-color: var(--color-border);
+}
+
+/* Active page styling */
+.page-number.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Items-per-page dropdown */
+.per-page-select {
+  font-size: var(--font-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: #fff;
+  color: var(--text-primary);
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Label next to the dropdown */
+.pagination-per-page span {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-inline-start: var(--space-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .featured-news-item-large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* End Main Featured News */
