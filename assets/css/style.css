@@ -212,6 +212,7 @@
 .date img,
 .author img {
   width: 16px !important;
+  height: auto !important;
 }
 
 .category {
@@ -1911,10 +1912,10 @@
 }
 
 /* Analysis Section */
-.analysis-section {
+/* .analysis-section {
   padding: var(--space-xl) 0;
   background: var(--color-surface);
-}
+} */
 
 /* Large featured cards (top row) */
 .analysis-card-large {
@@ -1957,20 +1958,23 @@
 
 
 /* Small lists (columns of three) */
-.analysis-section .small-list {
+/* .analysis-section .small-list {
   background: #fff;
   padding: var(--space-sm);
   border-radius: var(--radius-md);
-}
+} */
 
-.analysis-section .small-list .badge-category {
 
-  margin-bottom: var(--space-sm);
-}
 
 .analysis-section .small-item {
   display: flex;
   align-items: start;
+}
+
+.analysis-section .small-title {
+  margin: var(--space-xs) 0;
+  font-size: var(--font-md);
+
 }
 
 .analysis-section .small-item+.small-item {
@@ -1978,18 +1982,16 @@
 }
 
 .analysis-section .small-img {
-  width: 90px;
-  height: 70px;
+  width: 100%;
+  max-width: 210px;
+  height: 160px;
+
   object-fit: cover;
   border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
 
-.analysis-section .small-title a {
-  font-size: var(--font-sm);
-  color: var(--text-primary);
-  text-decoration: none;
-}
+
 
 .analysis-section .small-title a:hover {
   color: var(--color-primary);
@@ -2043,4 +2045,46 @@
 .owl-next .owl-next-icon {
   display: inline-block;
 
+}
+
+/* 
+  1) outer grid: two equal-width columns 
+     - left = .small-grid, right = .main-card 
+*/
+.middle-east-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  align-items: stretch;
+}
+
+/* 
+  2) small-grid: 2×2 grid for the four mini-cards 
+*/
+.small-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.middle-east-grid .featured-news-item {
+  box-shadow: none;
+  background: transparent;
+}
+
+.middle-east-grid .featured-news-item>img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+}
+
+.small-grid .small-card .card-title {
+  font-size: var(--font-md);
+}
+
+.homepage-featured .hero-title a:hover {
+  color: #fff;
 }

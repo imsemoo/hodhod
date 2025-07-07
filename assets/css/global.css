@@ -170,7 +170,7 @@ a:hover {
 }
 
 .rounded {
-  border-radius: var(--radius-md) !important;
+  border-radius: var(--radius-lg) !important;
 }
 
 .section {
