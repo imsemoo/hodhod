@@ -112,7 +112,7 @@
   <section class="hodhod-header">
     <!-- Top News Ticker -->
     <div class="news-ticker">
-      <div class="container d-flex align-items-center overflow-hidden">
+      <div class="container-fluid d-flex align-items-center overflow-hidden">
         <span class="badge">أخبار</span>
         <div class="news-track">
           <div class="news-list">
@@ -132,7 +132,7 @@
 
     <!-- Logo and Navigation -->
     <div class="topbar">
-      <div class="container d-flex  align-items-center">
+      <div class="container-fluid d-flex  align-items-center">
         <div class="logo">
           <img src="assets/img/logo.png" alt="Hodhod Logo" />
         </div>
@@ -154,7 +154,7 @@
 
     <!-- Search and Social -->
     <div class="search-bar">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-3">
         <form class="d-flex flex-grow-1" role="search">
           <select class="form-select w-auto me-2">
             <option>كل التصنيفات</option>
@@ -176,92 +176,931 @@
     </div>
   </section>
 
+  <!-- Homepage First Section: Full-width Featured + 4 Small Cards -->
+  <section class="homepage-featured ">
+    <div class="container-fluid p-0">
+      <!-- Featured Hero (full width) -->
+      <article class="featured-hero position-relative text-white">
+        <!-- Featured image -->
+        <img src="assets/img/articles/Horizontal/1.jpg" alt="Protester waving Palestinian flag"
+          class="hero-img w-100" />
+        <!-- Gradient overlay for text legibility -->
+        <div class="overlay position-absolute inset-0"></div>
+        <!-- Content container -->
+        <div class="hero-content position-absolute bottom-0 start-0 end-0 p-4">
+          <!-- Category label -->
+          <span class="category">آخر الأخبار</span>
+          <!-- Main headline -->
+          <h2 class="hero-title">
+            تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية الإيرانية
+          </h2>
+          <!-- Author and date info -->
+          <div class="d-flex gap-2 align-items-center text-white mb-3 mt-3">
+            <span class="author">
+              <img src="assets/img/icons/author_white.svg" alt="Author icon">
+              أمجد سامح
+            </span>
+            <span class="date">
+              <img src="assets/img/icons/date.svg" alt="Date icon">
+              13 مايو 2025
+            </span>
+          </div>
+          <!-- Short description/excerpt -->
+          <p class="hero-desc">
+            شهدت الضفة إغلاق ثلاثة طرق رئيسية صباح اليوم، ما تسبب في تعطيل حركة المرور وتأخير الموظفين والعاملين في
+            المؤسسات الحكومية.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="container-fluid">
+      <!-- Four small news cards -->
+      <div class="row mt-4">
+        <!-- Card 1 -->
+        <div class="col-md-3">
+          <article class="small-news-card d-flex align-items-center overflow-hidden h-100">
+            <!-- Thumbnail image -->
+            <img src="assets/img/articles/Square/1.jpg" alt="Clashes in Hebron" class="card-img-top" loading="lazy"
+              decoding="async" />
+            <div class="px-3 flex-grow-1">
+              <!-- Title (approx. 52 chars) -->
+              <h6 class="mb-2">
+                <a href="#">
+                  ارتفاع حدة التوتر في مدينة الخليل بسبب الاشتباكات
+                </a>
+              </h6>
+              <!-- Author and date meta -->
+              <div class="d-flex gap-2 align-items-center mt-3">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt="Author icon">
+                  أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt="Date icon">
+                  13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <article class="small-news-card d-flex align-items-center overflow-hidden h-100">
+            <!-- Thumbnail image -->
+            <img src="assets/img/articles/Square/2.jpg" alt="Field hospital" class="card-img-top" loading="lazy"
+              decoding="async" />
+            <div class="px-3 flex-grow-1">
+              <!-- Title (approx. 56 chars) -->
+              <h6 class="mb-2">
+                <a href="#">
+                  افتتاح مستشفى ميداني جديد في غزة لتقديم الرعاية العاجلة
+                </a>
+              </h6>
+              <!-- Author and date meta -->
+              <div class="d-flex gap-2 align-items-center mt-3">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt="Author icon">
+                  أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt="Date icon">
+                  13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <article class="small-news-card d-flex align-items-center overflow-hidden h-100">
+            <!-- Thumbnail image -->
+            <img src="assets/img/articles/Square/3.jpg" alt="Diplomatic moves" class="card-img-top" loading="lazy"
+              decoding="async" />
+            <div class="px-3 flex-grow-1">
+              <!-- Title (approx. 48 chars) -->
+              <h6 class="mb-2">
+                <a href="#">
+                  تحركات دبلوماسية عربية لوقف الانتهاكات في الأقصى
+                </a>
+              </h6>
+              <!-- Author and date meta -->
+              <div class="d-flex gap-2 align-items-center mt-3">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt="Author icon">
+                  أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt="Date icon">
+                  13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3">
+          <article class="small-news-card d-flex align-items-center overflow-hidden h-100">
+            <!-- Thumbnail image -->
+            <img src="assets/img/articles/Square/4.jpg" alt="Security talks" class="card-img-top" loading="lazy"
+              decoding="async" />
+            <div class="px-3 flex-grow-1">
+              <!-- Title (approx. 50 chars) -->
+              <h6 class="mb-2">
+                <a href="#">
+                  محادثات أمنية إسرائيلية لمراجعة خطة غزة المرتقبة
+                </a>
+              </h6>
+              <!-- Author and date meta -->
+              <div class="d-flex gap-2 align-items-center mt-3">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt="Author icon">
+                  أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt="Date icon">
+                  13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="translated-articles section">
+    <div class="container-fluid">
+      <!-- Section heading badge -->
+      <h4 class="section-badge">مقالات مترجمة</h4>
+
+      <div class="row">
+        <!-- Main featured translated article -->
+        <div class="col-md-6">
+          <div class="card featured-news-item rounded overflow-hidden h-100">
+            <!-- Featured image -->
+            <img src="assets/img/articles/Horizontal/3.jpg" class="card-img-top" alt="Protesters holding signs">
+            <div class="card-body pt-3 p-0">
+              <!-- Category label -->
+              <span class="category">رأي المشهد</span>
+              <!-- Headline -->
+              <h3 class="card-title mb-3">
+                <a href="#">خارطة التوسعات الاستيطانية تتغير بوتيرة قياسية</a>
+              </h3>
+              <!-- Meta: author and date -->
+              <div class="text-muted small d-flex gap-3">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+              <!-- Excerpt text -->
+              <p class="card-text mt-3">
+                تعكس المخططات الجديدة ضغوطاً سياسية وأمنية دفعت الحكومة إلى مراجعة خطط البناء دون إشعار مسبق، ما يترك
+                سكان الضفة في حالة ترقب دائم.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Three small horizontal translated articles -->
+        <div class="col-md-6">
+          <div class="small-news-list">
+            <!-- Small item 1 -->
+            <article class="small-news-card d-flex align-items-center overflow-hidden mb-3">
+              <!-- Thumbnail -->
+              <img src="assets/img/articles/Square/1.jpg" alt="West Bank street" class="card-img" loading="lazy"
+                decoding="async">
+              <div class="px-3 flex-grow-1">
+                <!-- Title -->
+                <h4 class="mb-2 card-title">
+                  <a href="#">مدن الضفة تواجه تحديات حقيقية في ظل القيود الأمنية</a>
+                </h4>
+                <!-- Meta: author and date -->
+                <div class="text-muted small d-flex gap-3">
+                  <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
+                  <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Small item 2 -->
+            <article class="small-news-card d-flex align-items-center overflow-hidden mb-3">
+              <!-- Thumbnail -->
+              <img src="assets/img/articles/Square/2.jpg" alt="Field hospital tent" class="card-img" loading="lazy"
+                decoding="async">
+              <div class="px-3 flex-grow-1">
+                <!-- Title -->
+                <h4 class="card-title mb-2">
+                  <a href="#">مبادرات أممية لرفع مستوى المساعدات في مخيمات غزة</a>
+                </h4>
+                <!-- Meta: author and date -->
+                <div class="text-muted small d-flex gap-3">
+                  <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
+                  <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Small item 3 -->
+            <article class="small-news-card d-flex align-items-center overflow-hidden">
+              <!-- Thumbnail -->
+              <img src="assets/img/articles/Square/3.jpg" alt="Diplomatic meeting" class="card-img" loading="lazy"
+                decoding="async">
+              <div class="px-3 flex-grow-1">
+                <!-- Title -->
+                <h4 class="mb-2 card-title">
+                  <a href="#">تحركات دبلوماسية عربية لوقف الأعمال العدائية في المنطقة</a>
+                </h4>
+                <!-- Meta: author and date -->
+                <div class="text-muted small d-flex gap-3">
+                  <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
+                  <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section section" dir="rtl">
+    <div class="container-fluid">
+      <!-- Tabs navigation -->
+      <ul class="nav-tabs d-flex justify-content-start gap-3 mb-4">
+        <li class="tab-item active" data-tab="plus">الهدهد بلس</li>
+        <li class="tab-item" data-tab="trans">ترجمات</li>
+        <li class="tab-item" data-tab="reports">تقارير</li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- Tab pane: Hodhod Plus -->
+        <div class="tab-pane active" id="plus">
+          <div class="row g-4 mb-4">
+            <!-- Main video thumbnail + details -->
+            <div class="col-md-6">
+              <div class="video-main thumb" data-video="https://www.youtube.com/embed/ABC123xyz">
+                <img src="assets/img/articles/Horizontal/3.jpg" alt="Main Plus Video">
+                <span class="play-icon">
+                  <img src="assets/img/icons/play.svg" alt="Play icon" class="play-icon-img">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6 text-white d-flex flex-column justify-content-center">
+              <span class="category">الهدهد بلس</span>
+              <h2 class="video-title mt-2">
+                تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية الإيرانية
+              </h2>
+              <div class="text-white small d-flex gap-3 my-3">
+                <span class="author text-white">
+                  <img src="assets/img/icons/author_white.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date text-white">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+              <p class="video-desc">
+                شهدت الضفة إغلاق ثلاثة طرق رئيسية صباح اليوم، ما تسبب في تعطيل حركة المرور وتأخير الموظفين في وزاراتهم.
+              </p>
+            </div>
+          </div>
+
+          <!-- Four small video thumbnails -->
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="video-thumb thumb" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <img src="assets/img/videos/thumb1.jpg" alt="Thumb 1">
+                <span class="play-icon">
+                  <img src="assets/img/icons/play.svg" alt="Play icon" class="play-icon-img">
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="video-thumb thumb" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <img src="assets/img/videos/thumb2.jpg" alt="Thumb 2">
+                <span class="play-icon">
+                  <img src="assets/img/icons/play.svg" alt="Play icon" class="play-icon-img">
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="video-thumb thumb" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <img src="assets/img/videos/thumb3.jpg" alt="Thumb 3">
+                <span class="play-icon">
+                  <img src="assets/img/icons/play.svg" alt="Play icon" class="play-icon-img">
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="video-thumb thumb" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <img src="assets/img/videos/thumb1.jpg" alt="Thumb 4">
+                <span class="play-icon">
+                  <img src="assets/img/icons/play.svg" alt="Play icon" class="play-icon-img">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab pane: Translations -->
+        <div class="tab-pane" id="trans">
+          <!-- repeat same structure with your own thumbnails & YouTube IDs -->
+        </div>
+
+        <!-- Tab pane: Reports -->
+        <div class="tab-pane" id="reports">
+          <!-- repeat same structure here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS: tab switching + thumbnail→YouTube iframe replacement -->
+  <script>
+    // Tab navigation
+    document.querySelectorAll('.tab-item').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Replace thumbnail with YouTube iframe on click
+    document.querySelectorAll('.thumb').forEach(el => {
+      el.addEventListener('click', function () {
+        const src = this.dataset.video;
+        const iframe = document.createElement('iframe');
+        iframe.src = src + '?autoplay=1&rel=0';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = '0';
+        iframe.allow = 'autoplay; encrypted-media; fullscreen';
+        iframe.allowFullscreen = true;
+        this.innerHTML = '';
+        this.appendChild(iframe);
+      });
+    });
+  </script>
+
+
+
+  <section class="analysis-section section">
+    <div class="container-fluid">
+      <h4 class="section-badge">رؤى الهدهد </h4>
+      <!-- Top row: three featured cards -->
+      <div class="row g-4 mb-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <article class="analysis-card-large position-relative rounded overflow-hidden">
+            <!-- Category badge -->
+            <span class="badge-large category">كاريكاتير</span>
+            <!-- Image -->
+            <img src="assets/img/articles/Horizontal/1.jpg" alt="Analysis 1" class="w-100" loading="lazy"
+              decoding="async" />
+            <!-- Text content -->
+            <div class="analysis-content p-3 bg-white">
+              <h5 class="card-title mb-2">
+                <a href="#">أزمة تجنيد الحريديم تطغي على النقاشات في الكيان</a>
+              </h5>
+              <div class="meta small d-flex gap-3 align-items-center">
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <article class="analysis-card-large position-relative rounded overflow-hidden">
+            <span class="badge-large category"> انفوجراف</span>
+            <img src="assets/img/articles/Horizontal/2.jpg" alt="Analysis 2" class="w-100" loading="lazy"
+              decoding="async" />
+            <div class="analysis-content p-3 bg-white">
+              <h5 class="card-title mb-2">
+                <a href="#">أزمة تجنيد الحريديم تطغي على النقاشات في الكيان</a>
+              </h5>
+              <div class="meta small d-flex gap-3 align-items-center">
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <article class="analysis-card-large position-relative rounded overflow-hidden">
+            <span class="badge-large category">اعرف عدوك</span>
+            <img src="assets/img/articles/Horizontal/3.jpg" alt="Analysis 3" class="w-100" loading="lazy"
+              decoding="async" />
+            <div class="analysis-content p-3 bg-white">
+              <h5 class="card-title mb-2">
+                <a href="#">أزمة تجنيد الحريديم تطغي على النقاشات في الكيان</a>
+              </h5>
+              <div class="meta small d-flex gap-3 align-items-center">
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Middle grid: 4 columns of 3 small items -->
+      <div class="row g-4 mb-4">
+        <!-- Column 1: كاريكاتير -->
+        <div class="col-md-4">
+          <div class="small-list">
+            <span class="badge-category category">كاريكاتير</span>
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/1.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/2.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="small-item d-flex align-items-center">
+              <img src="assets/img/articles/Square/3.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Column 2: انفوجراف -->
+        <div class="col-md-4">
+          <div class="small-list">
+            <span class="badge-category category">انفوجراف</span>
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/1.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/2.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="small-item d-flex align-items-center">
+              <img src="assets/img/articles/Square/3.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Column 3: أعرف عدوك -->
+        <div class="col-md-4">
+          <div class="small-list">
+            <span class="badge-category category">اعرف عدوك </span>
+            <!-- Item 1 -->
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/1.jpg" alt="" class="small-img rounded" loading="lazy"
+                decoding="async" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <!-- Item 2 -->
+            <article class="small-item d-flex align-items-center mb-3">
+              <img src="assets/img/articles/Square/2.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+            <!-- Item 3 -->
+            <article class="small-item d-flex align-items-center">
+              <img src="assets/img/articles/Square/3.jpg" alt="" class="small-img rounded" />
+              <div class="flex-grow-1 ps-3">
+                <h6 class="small-title mb-1">
+                  <a href="#">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة النووية الإيرانية</a>
+                </h6>
+                <div class="meta small d-flex gap-3 align-items-center">
+                  <span class="date">
+                    <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                  </span>
+                  <span class="author">
+                    <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Situation Assessment Section -->
+  <section class="situation-assessment-section section">
+    <div class="container-fluid">
+      <h4 class="section-badge">تقدير موقف</h4>
+
+      <!-- Carousel wrapper with a custom class -->
+      <div class="situation-carousel owl-carousel owl-theme">
+        <div class="item">
+          <div class="card featured-news-item rounded overflow-hidden h-100">
+            <img src="assets/img/articles/Horizontal/3.jpg" class="card-img-top" alt="Protesters holding signs">
+            <div class="card-body pt-3 p-0">
+              <span class="category">تقدير موقف</span>
+              <h3 class="card-title mb-3">
+                <a href="#">خارطة التوسعات الاستيطانية تتغير بوتيرة قياسية</a>
+              </h3>
+              <div class="text-muted small d-flex gap-3 ">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- repeat .item blocks as needed -->
+        <div class="item">
+          <div class="card featured-news-item rounded overflow-hidden h-100">
+            <img src="assets/img/articles/Horizontal/1.jpg" class="card-img-top" alt="Protesters holding signs">
+            <div class="card-body pt-3 p-0">
+              <span class="category">تقدير موقف</span>
+              <h3 class="card-title mb-3">
+                <a href="#">خارطة التوسعات الاستيطانية تتغير بوتيرة قياسية</a>
+              </h3>
+              <div class="text-muted small d-flex gap-3 ">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card featured-news-item rounded overflow-hidden h-100">
+            <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="Protesters holding signs">
+            <div class="card-body pt-3 p-0">
+              <span class="category">تقدير موقف</span>
+              <h3 class="card-title mb-3">
+                <a href="#">خارطة التوسعات الاستيطانية تتغير بوتيرة قياسية</a>
+              </h3>
+              <div class="text-muted small d-flex gap-3 ">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card featured-news-item rounded overflow-hidden h-100">
+            <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="Protesters holding signs">
+            <div class="card-body pt-3 p-0">
+              <span class="category">تقدير موقف</span>
+              <h3 class="card-title mb-3">
+                <a href="#">خارطة التوسعات الاستيطانية تتغير بوتيرة قياسية</a>
+              </h3>
+              <div class="text-muted small d-flex gap-3 ">
+                <span class="author">
+                  <img src="assets/img/icons/author.svg" alt=""> أمجد سامح
+                </span>
+                <span class="date">
+                  <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="quotes-section ">
+    <div class="container-fluid">
+      <!-- Section title -->
+      <h4 class="section-badge">أقوال الصحف<h4>
+
+          <!-- First row: two main cards side by side -->
+          <div class="row ">
+            <div class="col-md-6">
+              <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured news"
+                  class="w-100 h-100 object-fit-cover">
+                <div class="overlay position-absolute bottom-0 w-100 p-4"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <span class="category">اقوال الصحف</span>
+                  <h3 class="fw-bold text-white">
+                    <a href="#">
+                      تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية الإيرانية
+                    </a>
+                  </h3>
+                  <div class="d-flex gap-2 align-items-center text-white">
+                    <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                      سامح</a>
+                    <span class="date text-white">
+                      <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/2.jpg" alt="Featured news"
+                  class="w-100 h-100 object-fit-cover">
+                <div class="overlay position-absolute bottom-0 w-100 p-4"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <span class="category">اقوال الصحف</span>
+                  <h3 class="fw-bold text-white">
+                    <a href="#">
+                      غارات جوية تستهدف مواقع في غزة فجر اليوم وسط تصاعد التوتر
+                    </a>
+                  </h3>
+                  <div class="d-flex gap-2 align-items-center text-white">
+                    <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                      سامح</a>
+                    <span class="date text-white">
+                      <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second row: 3 more main cards side by side -->
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/3.jpg" alt="Featured news"
+                  class="w-100 h-100 object-fit-cover">
+                <div class="overlay position-absolute bottom-0 w-100 p-4"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <span class="category">اقوال الصحف</span>
+                  <h3 class="fw-bold text-white">
+                    <a href="#">
+                      الاحتلال يفرض إغلاقًا شاملًا على نابلس والقدس
+                    </a>
+                  </h3>
+                  <div class="d-flex gap-2 align-items-center text-white">
+                    <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                      سامح</a>
+                    <span class="date text-white">
+                      <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured news"
+                  class="w-100 h-100 object-fit-cover">
+                <div class="overlay position-absolute bottom-0 w-100 p-4"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <span class="category">اقوال الصحف</span>
+                  <h3 class="fw-bold text-white">
+                    <a href="#">
+                      دعوات دولية لوقف التصعيد الإسرائيلي في غزة
+                    </a>
+                  </h3>
+                  <div class="d-flex gap-2 align-items-center text-white">
+                    <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                      سامح</a>
+                    <span class="date text-white">
+                      <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-card position-relative text-white rounded overflow-hidden h-100">
+                <img src="assets/img/articles/Horizontal/2.jpg" alt="Featured news"
+                  class="w-100 h-100 object-fit-cover">
+                <div class="overlay position-absolute bottom-0 w-100 p-4"
+                  style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                  <span class="category">اقوال الصحف</span>
+                  <h3 class="fw-bold text-white">
+                    <a href="#">
+                      دعوات دولية لوقف التصعيد الإسرائيلي في غزة
+                    </a>
+                  </h3>
+                  <div class="d-flex gap-2 align-items-center text-white">
+                    <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                      سامح</a>
+                    <span class="date text-white">
+                      <img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
 
   <section class="main-featured-news section">
-    <div class="container">
-      <div class="row g-4">
+    <div class="container-fluid">
+      <h4 class="section-badge">الاستيطان الإسرائيلي <h4>
 
-        <!-- Left column: four small news cards -->
-        <div class="col-md-6">
-          <div class="row g-3">
+          <div class="featured-news-grid">
+            <div class="main-card card-area-1 position-relative text-white rounded overflow-hidden h-100">
+              <img src="assets/img/articles/Square/9.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
+              <div class="overlay position-absolute bottom-0 w-100 p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                <span class="category">آخر الأخبار</span>
+                <h3 class="fw-bold text-white card-title">
+                  <a href="#">
 
-            <!-- Small news card 1 -->
-            <div class="col-6">
-              <div class="card small-news-card rounded overflow-hidden h-100">
-                <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="News thumbnail">
-                <div class="card-body p-3">
-                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
-                  <div class="text-muted small d-flex gap-3">
-                    <span class="author"><img src="assets/img/icons/author.svg" alt=""> أمجد سامح</span>
-                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
-                  </div>
+                    تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
+                    الإيرانية
+                  </a>
+
+                </h3>
+                <div class="d-flex gap-2 align-items-center  text-white ">
+                  <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                    سامح</a>
+                  <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
                 </div>
               </div>
             </div>
 
-            <!-- Small news card 2 -->
-            <div class="col-6">
-              <div class="card small-news-card rounded overflow-hidden h-100">
-                <img src="assets/img/articles/Horizontal/3.jpg" class="card-img-top" alt="News thumbnail">
-                <div class="card-body p-3">
-                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
-                  <div class="text-muted small d-flex gap-3">
-                    <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
-                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
-                  </div>
+            <div class="main-card card-area-2 position-relative text-white rounded overflow-hidden h-100">
+              <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
+              <div class="overlay position-absolute bottom-0 w-100 p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                <span class="category">آخر الأخبار</span>
+                <h3 class="fw-bold text-white card-title">
+                  <a href="#">
+                    تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
+                    الإيرانية
+                  </a>
+                </h3>
+                <div class="d-flex gap-2 align-items-center  text-white ">
+                  <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                    سامح</a>
+                  <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
                 </div>
               </div>
             </div>
 
-            <!-- Small news card 3 -->
-            <div class="col-6">
-              <div class="card small-news-card rounded overflow-hidden h-100">
-                <img src="assets/img/articles/Horizontal/1.jpg" class="card-img-top" alt="News thumbnail">
-                <div class="card-body p-3">
-                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
-                  <div class="text-muted small d-flex gap-3">
-                    <span class="author"><img src="assets/img/icons/author.svg" alt=""> أمجد سامح</span>
-                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
-                  </div>
+            <div class="main-card card-area-3 position-relative text-white rounded overflow-hidden h-100">
+              <img src="assets/img/articles/Square/8.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
+              <div class="overlay position-absolute bottom-0 w-100 p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                <span class="category">آخر الأخبار</span>
+                <h3 class="fw-bold text-white card-title">
+                  <a href="#">
+                    تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
+                    الإيرانية
+                  </a>
+                </h3>
+                <div class="d-flex gap-2 align-items-center  text-white ">
+                  <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                    سامح</a>
+                  <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
                 </div>
               </div>
             </div>
 
-            <!-- Small news card 4 -->
-            <div class="col-6">
-              <div class="card small-news-card rounded overflow-hidden h-100">
-                <img src="assets/img/articles/Horizontal/2.jpg" class="card-img-top" alt="News thumbnail">
-                <div class="card-body p-3">
-                  <h6 class="card-title">تشابه وانتصار موهوم: بين وعود ترامب ومخاتل السياسة</h6>
-                  <div class="text-muted small d-flex gap-3">
-                    <span class="author"><img src="assets/img/icons/author.svg" alt="">أمجد سامح</span>
-                    <span class="date"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
-                  </div>
+            <div class="main-card card-area-4 position-relative text-white rounded overflow-hidden h-100">
+              <img src="assets/img/articles/Square/7.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
+              <div class="overlay position-absolute bottom-0 w-100 p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                <span class="category">آخر الأخبار</span>
+                <h3 class="fw-bold text-white card-title">
+                  <a href="#">
+                    تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
+                    الإيرانية
+                  </a>
+                </h3>
+                <div class="d-flex gap-2 align-items-center  text-white ">
+                  <a href="#" class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد
+                    سامح</a>
+                  <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
                 </div>
               </div>
             </div>
 
           </div>
-        </div>
 
-        <!-- Right column: one large featured news card -->
-        <div class="col-md-6">
-          <div class="main-card position-relative text-white rounded overflow-hidden h-100">
-            <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured news" class="w-100 h-100 object-fit-cover">
-            <div class="overlay position-absolute bottom-0 w-100 p-4"
-              style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-              <span class="category">آخر الأخبار</span>
-              <h3 class="fw-bold text-white">تقرير: رغم معارضة ترامب.. إسرائيل لا تستبعد مهاجمة المنشآت النووية
-                الإيرانية</h3>
-              <div class="d-flex gap-2 align-items-center  text-white ">
-                <span class="author text-white"><img src="assets/img/icons/author_white.svg" alt=""> أمجد سامح</span>
-                <span class="date text-white"><img src="assets/img/icons/date.svg" alt=""> 13 مايو 2025</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </section>
 

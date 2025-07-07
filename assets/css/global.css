@@ -305,3 +305,29 @@ ul {
     transform: translateX(100%);
   }
 }
+
+.w-60 {
+  width: 60%;
+}
+
+@media (max-width: 767.98px) {
+
+  .w-60 {
+    width: 100%;
+  }
+}
+
+.section-badge {
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  border-right: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: "Al-Jazeera-Bold";
+  background: #FFF8EB;
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-md);
+}

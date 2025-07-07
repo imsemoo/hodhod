@@ -31,8 +31,24 @@ $(document).ready(function () {
     animateOut: 'fadeOut'
   });
 
+  // Initialize Owl Carousel on our custom wrapper
+  $('.situation-carousel').owlCarousel({
+    loop: true,
+    rtl: true,
 
-
+    margin: 20,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fas fa-chevron-right"></i>',
+      '<i class="fas fa-chevron-left"></i>'
+    ],
+    responsive: {
+      0: { items: 1 },
+      576: { items: 2 },
+      992: { items: 3 }
+    }
+  });
 
   const track = document.querySelector(".news-list");
   let x = 0;
@@ -64,3 +80,4 @@ $(document).ready(function () {
   });
 
 });
+
