@@ -174,7 +174,7 @@ a:hover {
 }
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: var(--container-padding-vertical) 0;
 }
 
 input::placeholder {

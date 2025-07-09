@@ -132,23 +132,45 @@
 
     <!-- Logo and Navigation -->
     <div class="topbar">
-      <div class="container-fluid d-flex  align-items-center">
+      <div class="container-fluid d-flex  align-items-center justify-content-between">
         <div class="logo">
           <img src="assets/img/logo.png" alt="Hodhod Logo" />
         </div>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars "></i>
-        </button>
+        <div class="buttons-group  d-lg-none">
+          <a class="search-btn btn-header " aria-label="Toggle search bar">
+            <i class="fas fa-search "></i>
+          </a>
+          <button class="navbar-toggler  btn-header " type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars "></i>
+          </button>
+        </div>
+
         <ul class="nav gap-3 collapse d-lg-flex m-auto" id="mainNav">
-          <li class="nav-item active"><a class="nav-link " href="#">الرئيسية</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">الرئيسية</a></li>
           <li class="nav-item"><a class="nav-link" href="#">أعداء الشارع الإسرائيلي</a></li>
           <li class="nav-item"><a class="nav-link" href="#">الاستيطان الإسرائيلي</a></li>
           <li class="nav-item"><a class="nav-link" href="#">شؤون عسكرية</a></li>
           <li class="nav-item"><a class="nav-link" href="#">شؤون فلسطينية</a></li>
           <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
           <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
+
+          <!-- New “المزيد” dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              المزيد
+              <i class="fas fa-chevron-down dropdown-arrow ms-1"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+              <li><a class="dropdown-item" href="#">رأي الهدهد</a></li>
+              <li><a class="dropdown-item" href="#">ترجمات</a></li>
+              <li><a class="dropdown-item" href="#">تقارير</a></li>
+              <li><a class="dropdown-item" href="#">كليبس</a></li>
+            </ul>
+          </li>
         </ul>
+
       </div>
     </div>
 
