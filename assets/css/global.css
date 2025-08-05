@@ -43,13 +43,14 @@
   --radius-xl: 32px;
 
   /* Fluid Typography Sizes (optimized for Al Jazeera Arabic font) */
-  --font-xs: clamp(0.75rem, 0.5vw + 0.7rem, 0.875rem);
-  --font-sm: clamp(0.875rem, 0.6vw + 0.8rem, 1rem);
-  --font-md: clamp(1rem, 1vw + 0.9rem, 1.125rem);
-  --font-lg: clamp(1.25rem, 1.2vw + 1rem, 1.5rem);
-  --font-xl: clamp(1.5rem, 1.5vw + 1.25rem, 2rem);
-  --font-xxl: clamp(2rem, 2.5vw + 1.5rem, 3rem);
-  --font-display: clamp(3rem, 4vw + 2rem, 5rem);
+  --font-xs: clamp(0.7rem, 0.45vw + 0.65rem, 0.8rem);
+  --font-sm: clamp(0.8rem, 0.55vw + 0.75rem, 0.95rem);
+  --font-md: clamp(0.95rem, 0.9vw + 0.85rem, 1.05rem);
+  --font-lg: clamp(1.1rem, 1.1vw + 0.95rem, 1.3rem);
+  --font-xl: clamp(1.4rem, 1.4vw + 1.15rem, 1.8rem);
+  --font-xxl: clamp(1.9rem, 2.3vw + 1.4rem, 2.8rem);
+  --font-display: clamp(2.8rem, 3.8vw + 1.9rem, 4.5rem);
+
 }
 
 /* Reset */
@@ -58,6 +59,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 /* Fonts */
 @font-face {
@@ -170,7 +173,7 @@ a:hover {
 }
 
 .rounded {
-  border-radius: var(--radius-lg) !important;
+  border-radius: var(--radius-md) !important;
 }
 
 .section {
